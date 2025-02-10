@@ -1,0 +1,27 @@
+// makle a cpp code for pure virtual function 
+#include<iostream>
+using namespace std;
+class shape{
+    public:
+    virtual void display() = 0;
+};
+class circle : public shape{
+    public:
+    void display(){
+        cout<<"this is a circle"<<endl;
+        
+    }
+    
+};
+class box : public shape{
+    public:
+    void display(){
+        cout<<"this is a box"<<endl;
+    }
+};
+int main(){
+    circle c;
+    box b;
+    c.display();
+    b.display();
+}
